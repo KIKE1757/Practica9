@@ -1,24 +1,24 @@
 
-public class Empleado(){
+public abstract class Empleado{
 	public String nombre;
 	public String apellido;
-	public int num_seguro;
-	public Empleado(String n, String a, int num){
+	public String num_seguro;
+	public Empleado(String n, String a, String num){
 		nombre = n;
 		apellido = a;
 		num_seguro = num;
 	}
-	public abstract int ingresos(){}
+	public abstract float ingresos();
 	public String getNombre(){
-		return Empleado.nombre;
+		return nombre;
 	}
 	public String getApellido(){
-		return Empleado.apellido;
+		return apellido;
 	}
-	public int getNumSeguro(){
-		return Empleado.num_seguro;
+	public String getNumSeguro(){
+		return num_seguro;
 	}
-	public abstract String toString(){
+	public String getString(){
 		return "Nombre: "+getNombre() +", Apellido: "+getApellido()+", Numero de Seguro social: "+getNumSeguro();  
 	}
 }
