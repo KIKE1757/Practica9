@@ -18,6 +18,6 @@ public class EmpleadoPorComision extends Empleado{
         return getTasaComision()*getVentasTotales();
     }
     public String toString(){
-		return super.toString() + ", tasa comision " + ingresos();
+		return super.toString() + "\nTasa comision " + ingresos();
     }
 }

@@ -10,6 +10,6 @@ public class EmpleadoAsalariado extends Empleado{
 		return salario;
 	}
 	public String toString(){
-		return super.toString() + ", Salario: " + ingresos();
+		return super.toString() + "\nSalario: " + ingresos();
 	}
 }

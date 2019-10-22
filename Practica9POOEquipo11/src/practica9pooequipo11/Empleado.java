@@ -19,7 +19,7 @@ public abstract class Empleado{
 	public String getNumSeguro(){
 		return num_seguro;
 	}
-	public String getString(){
-		return "Nombre: "+getName() +", Apellido: "+getApellido()+", Numero de Seguro social: "+getNumSeguro();  
+	public String toString(){
+		return "Nombre: "+getName() +"\nApellido: "+getApellido()+"\nNumero de Seguro social: "+getNumSeguro();  
 	}
 }

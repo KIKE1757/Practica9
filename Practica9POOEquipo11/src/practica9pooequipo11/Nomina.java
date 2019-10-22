@@ -34,12 +34,12 @@ public class Nomina{
                 salida += "\nel nuevo salario base con aumento del 10% es: $" + empleadoActual.getSalarioBase();
             }
             
-            salida += "\ngano $" + empleados[i].ingresos() + "\n";
+            salida += "\ngano $" + empleados[i].ingresos() + "\n----------------------------------------------\n";
         }
         
         //obtener nombre del tipo de cada objeto en el arreglo empleados
         for(int j = 0; j < empleados.length; j++){
-            salida += "\nEl empleado " + empleados[j].getName() + " es un " + empleados[j].getClass().getName();
+            salida += "\nEl empleado " + j + " " + empleados[j].getName() + " es un " + empleados[j].getClass().getName();
         }
         
         JOptionPane.showMessageDialog(null, salida);

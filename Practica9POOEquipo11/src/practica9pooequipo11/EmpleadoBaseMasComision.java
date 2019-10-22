@@ -26,7 +26,7 @@ public class EmpleadoBaseMasComision extends EmpleadoPorComision{
         return getSalarioBase()+super.ingresos();
     }
     public String toString(){
-		return super.toString() + "salario " + ingresos();
+		return super.toString();
     }
 
 
