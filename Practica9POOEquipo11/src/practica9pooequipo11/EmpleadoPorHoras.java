@@ -18,6 +18,6 @@ public class EmpleadoPorHoras extends Empleado{
 		return (40*salario) + (horas-40) * salario * 1.5;
 	}
 	public String toString(){
-		return super.toString()+"\nSalario por hora"+ ingresos()+"\nLas horas que fueron"+ gethoras();
+		return super.toString()+"\nSalario por hora: "+ ingresos()+"\nLas horas que fueron: "+ gethoras();
 	}
 }

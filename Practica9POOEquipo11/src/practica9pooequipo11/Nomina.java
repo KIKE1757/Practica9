@@ -39,7 +39,7 @@ public class Nomina{
         
         //obtener nombre del tipo de cada objeto en el arreglo empleados
         for(int j = 0; j < empleados.length; j++){
-            salida += "\nEl empleado " + j + " " + empleados[j].getName() + " es un " + empleados[j].getClass().getName();
+            salida += "\nEl empleado " + j + " " + empleados[j].getName() + " es un " + empleados[j].getClass().getSimpleName();
         }
         
         JOptionPane.showMessageDialog(null, salida);
